@@ -27,6 +27,7 @@ and edit the host file location depending on the OS your using
 
 Now open the *app.py* and the goto line 4 with variable *site_to_block*
 and you can add the sites you would like to block during work time 
+
 ![](sites_to_block.png)
 
 Also when you go to the line no 12 and edit default host depending on 
