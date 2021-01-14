@@ -38,7 +38,7 @@ and you can add the sites you would like to block during work time
 Also when you go to the line no 12 and edit default host depending on 
 Operating System you're using 
 
-<img src="host_file_location.png" alt="drawing" width="400"/>
+<img src="host_file_location.png" alt="drawing" width="500"/>
 
 One more thing 
 -------------------
