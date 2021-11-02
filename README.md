@@ -18,7 +18,7 @@ computer that manages how you access the web
 Getting started 
 ---------------------
 
-Well getting started with this project just clone the clone the repo 
+Well getting started with this project just clone the repo 
 and edit the host file location depending on the OS your using 
 
 ```bash
