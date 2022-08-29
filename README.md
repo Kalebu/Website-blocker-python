@@ -1,4 +1,4 @@
-# Website-blocker-python
+# Website Blocker Python
 
 
 Intro 
@@ -6,20 +6,20 @@ Intro
 
 Hi Guys 👋 
 
-This repo consist of a code of a simple website blocker project implemented in Python, It can be used to block certain websites during working time to reduce distraction thus improving productivity
+This repository consists the code of a simple website blocker project implemented in Python. It can be used to block certain websites during work time to reduce distraction thus improving productivity.
 
 
 The magic 
 --------------
 
-The magic of this project lies on modifying the host file withing your 
-computer that manages how you access the web 
+The magic of this project lies on modifying the host file within your 
+computer that manages how you access the web.
 
 Getting started 
 ---------------------
 
-Well getting started with this project just clone the repo 
-and edit the host file location depending on the OS your using 
+Well to get started with this project just clone the repository 
+and edit the host file location depending on the OS your using.
 
 ```bash
     $-> git clone https://github.com/Kalebu/Website-blocker-python
@@ -43,15 +43,15 @@ Operating System you're using
 One more thing 
 -------------------
 
-You would need to set up the starting working + ending working hours where you would like to be restricted accessing those websites
-To do this go to line last line of our code and edit the hours where by
+You would need to set up the starting working + ending working hours where you would like to be restricted from accessing those websites
+To do this go to line last line of our code and edit the hours where by.
 
 <img src="time_to_block.png" alt="drawing" width="500"/>
 
 Congratulations 
 --------------------
 
-Well done you now have a fully functioning website blocker you have made yourself to improve the productivity in Python 
+Well done you now have a fully functioning website blocker that you have made yourself to improve your productivity, in Python 
 
 Issues 
 -----------
@@ -62,7 +62,7 @@ you can raise it on the issues
 Pull Requests
 ----------------
 
-If you have something to add I welcome pull requests on improvement , you're helpful contribution will be merged as soon as possible 
+If you have something to add, I welcome pull requests that improve the project, your helpful contribution will be merged as soon as possible.
 
 
 Give it a Star ✴️
@@ -71,4 +71,4 @@ If you find this repo useful , give it a star
 
 Credits
 -----------
-All the credits to [kalebu](github.com/kalebu)
+All the credits to [kalebu](https://github.com/Kalebu)
