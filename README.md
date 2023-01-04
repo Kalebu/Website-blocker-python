@@ -30,23 +30,23 @@ and edit the host file location depending on the OS your using.
 Adding sites to block + Editing host files 
 ------------------------------------------------
 
-Now open the *app.py* and the goto line 4 with variable *site_to_block*
+Now open the *app.py* and then go to line 4 with variable *site_to_block*
 and you can add the sites you would like to block during work time
 
-<img src="site_to_block.png" alt="drawing" width="500"/>
+![site_to_block](./site_to_block.png)
 
 Also when you go to the line no 12 and edit default host depending on 
 Operating System you're using 
 
-<img src="host_file_location.png" alt="drawing" width="500"/>
+![host_file_location](./host_file_location.png)
 
 One more thing 
 -------------------
 
-You would need to set up the starting working + ending working hours where you would like to be restricted from accessing those websites
+You would need to set up the starting working + ending working hours where you would like to be restricted from accessing those websites.
 To do this go to line last line of our code and edit the hours where by.
 
-<img src="time_to_block.png" alt="drawing" width="500"/>
+![time_to_block](./time_to_block.png)
 
 Congratulations 
 --------------------
