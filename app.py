@@ -1,6 +1,7 @@
 import time
 from datetime import datetime as dt
 
+# Enter the site name which you want to block
 sites_to_block = [
     "www.facebook.com",
     "facebook.com",
@@ -10,9 +11,10 @@ sites_to_block = [
     "gmail.com",
 ]
 
+# different hosts for different os
 Linux_host = "/etc/hosts"
 Window_host = r"C:\Windows\System32\drivers\etc\hosts"
-default_hoster = Linux_host
+default_hoster = Linux_host # if you are on windows then change it to Window_host
 redirect = "127.0.0.1"
 
 
