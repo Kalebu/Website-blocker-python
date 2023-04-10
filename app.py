@@ -14,7 +14,7 @@ sites_to_block = [
 
 
 # different hosts for different os
-Linux_host = "/etc/hosts"
+Linux_host = r"/etc/hosts"
 Window_host = r"C:\Windows\System32\drivers\etc\hosts"
 redirect = "127.0.0.1"
 
@@ -37,19 +37,7 @@ def open_websites(default_hoster):
 def check(start_hour, start_minute, end_hour, end_minute):
     counter1 = 0
     counter2 = 0 
-
-    device = input("Enter your OS Name ( Windows / Linux ) :")
-
-    if device.upper() == "WINDOWS" :
-        default_hoster = Window_host
-
-    elif device.upper() == "LINUX":
-        default_hoster = Linux_host
-
-    else:
-        print("Not available in this OS")   
-        exit(1)
-
+  
     while True:
         if (
             dt(dt.now().year, dt.now().month, dt.now().day, start_hour, start_minute)
@@ -71,11 +59,23 @@ def check(start_hour, start_minute, end_hour, end_minute):
 
 
 if __name__ == "__main__":
- if not pyuac.isUserAdmin():
-        print("Re-launching as admin!")
-        pyuac.runAsAdmin()
+
+    device = input("Enter your OS Name ( Windows / Linux ) :")
+
+    if device.upper() == "WINDOWS":
+        default_hoster = Window_host
+        if not pyuac.isUserAdmin():
+          print("Re-launching as admin!")
+          pyuac.runAsAdmin()
  
- else:
+
+    elif device.upper() == "LINUX":
+        default_hoster = Linux_host
+
+    else:
+        print("Not available in this OS")   
+        exit(1)
+   
     print("Hope you write the sites in sites_to_block field"
           "\n\nNow write the times in 24 hour clock format")
 
