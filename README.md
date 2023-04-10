@@ -27,26 +27,28 @@ and edit the host file location depending on the OS your using.
     $ Website-blocker-python ->
 ```
 
+
+How the program works?
+-------------------------
+```
+
+    - First you've to add the domains of sites in code mentioned below
+    - Run the Code
+    - "User Account Control" dialog box will pop up and you've to give the access
+    - Next you've to write the starting, ending time and the OS name
+    - And it will start running
+    - After the ending time host file will be cleared automatically 
+
+```
+
+
 Adding sites to block + Editing host files 
 ------------------------------------------------
 
-Now open the *app.py* and then go to line 4 with variable *site_to_block*
+Now open the *app.py* and then go to line 6 with variable *site_to_block*
 and you can add the sites you would like to block during work time
 
 ![site_to_block](./site_to_block.png)
-
-Also when you go to the line no 12 and edit default host depending on 
-Operating System you're using 
-
-![host_file_location](./host_file_location.png)
-
-One more thing 
--------------------
-
-You would need to set up the starting working + ending working hours where you would like to be restricted from accessing those websites.
-To do this go to line last line of our code and edit the hours where by.
-
-![time_to_block](./time_to_block.png)
 
 Congratulations 
 --------------------
