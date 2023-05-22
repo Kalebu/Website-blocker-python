@@ -35,10 +35,7 @@ and you can add the sites you would like to block during work time
 
 ![site_to_block](./site_to_block.png)
 
-Also when you go to the line no 12 and edit default host depending on 
-Operating System you're using 
-
-![host_file_location](./host_file_location.png)
+the script will automaticaly detect your OS and will add the host records to the relevent location
 
 One more thing 
 -------------------
