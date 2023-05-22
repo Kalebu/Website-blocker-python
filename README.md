@@ -33,7 +33,6 @@ Adding sites to block + Editing host files
 Now open the *app.py* and then go to line 4 with variable *site_to_block*
 and you can add the sites you would like to block during work time
 
-![site_to_block](./site_to_block.png)
 
 the script will automaticaly detect your OS and will add the host records to the relevent location
 
