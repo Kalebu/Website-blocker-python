@@ -30,15 +30,14 @@ else:
     print("OS Unknown")
     sys.exit()
 
-
 def block_websites(start_hour, end_hour):
-    """Function Blocking websites"""
+    """Function that Block websites"""
     while True:
         try:
             if (
-                    dt(dt.now().year, dt.now().month, dt.now().day, start_hour)
-                    < dt.now()
-                    < dt(dt.now().year, dt.now().month, dt.now().day, end_hour)
+                dt(dt.now().year, dt.now().month, dt.now().day, start_hour)
+                < dt.now()
+                < dt(dt.now().year, dt.now().month, dt.now().day, end_hour)
             ):
                 print("Do the work ....")
                 with open(DEFAULT_HOSTER, "r+", encoding="utf-8") as hostfile:
