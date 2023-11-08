@@ -1,3 +1,4 @@
+"""Module providing a function printing python version."""
 import time
 from datetime import datetime as dt
 import os
