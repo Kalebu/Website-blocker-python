@@ -1,3 +1,4 @@
+"""Module of website blocking version 2"""
 import time
 import ctypes
 
@@ -12,11 +13,11 @@ while True:
             # Use the Windows hosts file to block the website
             # This will only work on Windows systems
             ctypes.windll.wininet.InternetSetOptionW(0, 39, ctypes.c_void_p(0), 0)
-            with open(r"C:\Windows\System32\drivers\etc\hosts", "a") as file:
+            with open(r"C:\Windows\System32\drivers\etc\hosts", "a", encoding="utf-8") as file:
                 file.write(f"127.0.0.1 {website}\n")
     else:
         # Remove the website block if it's outside the set time range
-        with open(r"C:\Windows\System32\drivers\etc\hosts", "r+") as file:
+        with open(r"C:\Windows\System32\drivers\etc\hosts", "r+", encoding="utf-8") as file:
             lines = file.readlines()
             file.seek(0)
             for line in lines:
