@@ -2,6 +2,7 @@
 import time
 from datetime import datetime as dt
 import os
+import sys
 
 # Enter the site name which you want to block
 sites_to_block = [
