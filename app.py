@@ -1,4 +1,4 @@
-"""Module providing a function printing python version."""
+"""Module providing a function Blocking websites."""
 import time
 from datetime import datetime as dt
 import os
@@ -27,10 +27,11 @@ elif os.name == 'nt':
     DEFAULT_HOSTER = WINDOW_HOST
 else:
     print("OS Unknown")
-    exit()
+    sys.exit()
 
 
 def block_websites(start_hour, end_hour):
+    """Function Blocking websites"""
     while True:
         try:
             if (
@@ -39,13 +40,13 @@ def block_websites(start_hour, end_hour):
                     < dt(dt.now().year, dt.now().month, dt.now().day, end_hour)
             ):
                 print("Do the work ....")
-                with open(DEFAULT_HOSTER, "r+") as hostfile:
+                with open(DEFAULT_HOSTER, "r+", encoding="utf-8") as hostfile:
                     hosts = hostfile.read()
                     for site in sites_to_block:
                         if site not in hosts:
                             hostfile.write(REDIRECT + " " + site + "\n")
             else:
-                with open(DEFAULT_HOSTER, "r+") as hostfile:
+                with open(DEFAULT_HOSTER, "r+", encoding="utf-8") as hostfile:
                     hosts = hostfile.readlines()
                     hostfile.seek(0)
                     for host in hosts:
