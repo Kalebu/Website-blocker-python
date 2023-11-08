@@ -13,17 +13,17 @@ sites_to_block = [
 ]
 
 # different hosts for different os
-Linux_host = "/etc/hosts"
-Window_host = r"C:\Windows\System32\drivers\etc\hosts"
-default_hoster = Linux_host # if you are on windows then change it to Window_host
-redirect = "127.0.0.1"
+LINUX_HOST = "/etc/hosts"
+WINDOW_HOST = r"C:\Windows\System32\drivers\etc\hosts"
+DEFAULT_HOSTER = LINUX_HOST # if you are on windows then change it to WINDOW_HOST
+REDIRECT = "127.0.0.1"
 
 
 if os.name == 'posix':
-    default_hoster = Linux_host
+    DEFAULT_HOSTER = LINUX_HOST
 
 elif os.name == 'nt':
-    default_hoster = Window_host
+    DEFAULT_HOSTER = WINDOW_HOST
 else:
     print("OS Unknown")
     exit()
@@ -38,13 +38,13 @@ def block_websites(start_hour, end_hour):
                     < dt(dt.now().year, dt.now().month, dt.now().day, end_hour)
             ):
                 print("Do the work ....")
-                with open(default_hoster, "r+") as hostfile:
+                with open(DEFAULT_HOSTER, "r+") as hostfile:
                     hosts = hostfile.read()
                     for site in sites_to_block:
                         if site not in hosts:
-                            hostfile.write(redirect + " " + site + "\n")
+                            hostfile.write(REDIRECT + " " + site + "\n")
             else:
-                with open(default_hoster, "r+") as hostfile:
+                with open(DEFAULT_HOSTER, "r+") as hostfile:
                     hosts = hostfile.readlines()
                     hostfile.seek(0)
                     for host in hosts:
